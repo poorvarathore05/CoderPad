@@ -14,7 +14,7 @@ import { toast } from "react-hot-toast";
 import CodeEditor from "./CodeEditor";
 import { FaFileDownload } from "react-icons/fa";
 import { IoIosCopy } from "react-icons/io";
-import { ImCross } from "react-icons/im";
+import { RxCross2 } from "react-icons/rx";
 
 function EditorPage() {
   const [clients, setClients] = useState([]);
@@ -141,7 +141,7 @@ function EditorPage() {
           Download Code <FaFileDownload />
         </Button>
         <Button className="leaveRoom" variant="warning" onClick={leaveRoom}>
-          Leave <ImCross />
+          Leave <RxCross2 />
         </Button>
       </div>
 

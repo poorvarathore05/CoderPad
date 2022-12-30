@@ -21,7 +21,7 @@
 }
 #textEditor{
     margin-right: 2rem;
-    height: 98vh;
+    height: 99vh;
     width: 100%;
 
 }
@@ -51,7 +51,7 @@
     font-weight: bold;
 }
 .CodeMirror{
-    height: 96vh  !important;
+    height: 97vh  !important;
     font-size: 15px;
 }
 h4{ 

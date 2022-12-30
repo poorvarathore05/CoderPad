@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import "./Editor.css";
 import CodeMirror from "react-codemirror";
 import "codemirror/lib/codemirror.css";

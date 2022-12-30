@@ -67,7 +67,7 @@ function Home() {
           <span className="link_to_create">
             {" "}
             if you don't have invite then create{" "}
-            <a href="" className="link" onClick={createNewRoom}>
+            <a className="link" onClick={createNewRoom}>
               new room
             </a>
           </span>
