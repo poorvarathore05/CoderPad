@@ -18,7 +18,7 @@ import { RxCross2 } from "react-icons/rx";
 
 function EditorPage() {
   const [clients, setClients] = useState([]);
-
+  const REACT_APP_BACKEND_URL = "http://localhost:5000";
   let socketRef = useRef("");
   const codeRef = useRef(null);
   const location = useLocation();
@@ -50,7 +50,7 @@ function EditorPage() {
 
   useEffect(() => {
     const init = async () => {
-      socketRef.current = io("http://localhost:5000", options);
+      socketRef.current = io(REACT_APP_BACKEND_URL, options);
       socketRef.current.on("connect_error", (err) => handleErrors(err));
       socketRef.current.on("connect_failed", (err) => handleErrors(err));
 
