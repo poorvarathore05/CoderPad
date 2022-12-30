@@ -5,6 +5,7 @@ app.use(cors());
 const { Server } = require("socket.io");
 const http = require("http");
 const ACTIONS = require("./src/ACTIONS");
+const path = require("path");
 const server = http.createServer(app);
 
 const PORT = 5000 || process.env.port;
@@ -12,7 +13,9 @@ const PORT = 5000 || process.env.port;
 const io = new Server(server);
 
 app.use(express.static("build"));
-//app.use();
+app.use((req, res, next) => {
+  res.sendFile(path.join(__dirname, "build", "index.html"));
+});
 
 const userSocketMap = {};
 
