@@ -1,0 +1,56 @@
+.main{
+        display: flex;
+        margin-top: 12rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+}
+
+.link_to_create{
+    color: rgb(97, 225, 232);
+    font-style: normal;
+    font-size: 15px;
+}
+
+.title{
+    color: rgb(97, 225, 232);
+    margin-top: 1.5rem;
+    text-align: center;
+    justify-content: center;
+    font-size: 33px;
+}
+.form{
+    margin-left: 18px;
+    margin-right: 18px;
+    text-align: center;
+}
+.form-control{
+    margin-bottom: 0.5rem;
+}
+.card{
+    background-color: hwb(0deg 22% 76% / 66%) !important;
+}
+.link{
+    color: rgb(97, 216, 46);
+}
+.btnJoin{
+padding: auto;
+width: 5rem;
+}
+
+input{
+    margin-top: 1rem;
+}
+footer{
+    bottom: 0 !important;
+    position: fixed;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    color: rgb(92, 252, 0);
+    margin-left: 40rem;
+}
+a{
+    color: rgb(92, 252, 0) !important;
+}

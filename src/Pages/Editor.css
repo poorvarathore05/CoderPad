@@ -1,0 +1,59 @@
+.mainwrap{
+    display: grid;
+    grid-template-columns: 50fr 230fr;
+    height: 98vh;
+}
+.asidewrap{
+    color: rgb(211 245 150);
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    padding: 10px;
+}
+.inner{
+    flex: 1;
+}
+.clients-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+#textEditor{
+    margin-right: 2rem;
+    height: 98vh;
+    width: 100%;
+
+}
+.leaveRoom{
+    margin-top: 20px;
+    /* height: 50px;
+    line-height: 51px;
+    width: 50px;
+    font-size: 1em;
+    font-weight: 1em;
+    border-radius: 50%;
+    background-color:red;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid red; */
+    
+}
+.downloadCode{
+    margin-top: 20px;
+}
+                   
+.logo img{
+    width: 200px;
+    height: 100px;
+}
+.btn{
+    font-weight: bold;
+}
+.CodeMirror{
+    height: 96vh  !important;
+    font-size: 15px;
+}
+h4{ 
+ text-align: center;
+}
