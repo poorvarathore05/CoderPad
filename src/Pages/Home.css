@@ -10,6 +10,7 @@
     color: rgb(97, 225, 232);
     font-style: normal;
     font-size: 15px;
+    cursor: pointer;
 }
 
 .title{
@@ -17,7 +18,7 @@
     margin-top: 1.5rem;
     text-align: center;
     justify-content: center;
-    font-size: 33px;
+    font-size: 30px;
 }
 .form{
     margin-left: 18px;

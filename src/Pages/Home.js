@@ -35,7 +35,7 @@ function Home() {
     <>
       <div className="main">
         <Card className="card" style={{ width: "25rem" }}>
-          <h2 className="title">Coding tool for Developers</h2>
+          <h4 className="title">Real Time Coding Tool for Developers</h4>
           <Form className="form">
             <Form.Group className="mb-3">
               <Form.Control

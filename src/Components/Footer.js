@@ -2,7 +2,7 @@ function Footer() {
   return (
     <footer>
       <h6>
-        Built by{" "}
+        Made by{" "}
         <a href="https://www.linkedin.com/in/poorva-rathore-baa85018b/">
           Poorva Rathore
         </a>
