@@ -1,7 +1,6 @@
 .mainwrap{
     display: grid;
     grid-template-columns: 50fr 230fr;
-    height: 98vh;
 }
 .asidewrap{
     color: rgb(211 245 150);
@@ -19,24 +18,8 @@
     gap: 20px;
     align-items: center;
 }
-#textEditor{
-    margin-right: 2rem;
-    height: 99vh;
-    width: 100%;
-
-}
 .leaveRoom{
     margin-top: 20px;
-    /* height: 50px;
-    line-height: 51px;
-    width: 50px;
-    font-size: 1em;
-    font-weight: 1em;
-    border-radius: 50%;
-    background-color:red;
-    text-align: center;
-    cursor: pointer;
-    border: 1px solid red; */
     
 }
 .downloadCode{
@@ -50,9 +33,11 @@
 .btn{
     font-weight: bold;
 }
-.CodeMirror{
-    height: 97vh  !important;
-    font-size: 15px;
+.CodeMirror {
+ min-height: calc(100vh - 20px); 
+    font-size: 17px;
+    line-height: 1;
+    padding-top: 15px;
 }
 h4{ 
  text-align: center;
