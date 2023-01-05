@@ -8,7 +8,7 @@ const ACTIONS = require("./src/ACTIONS");
 const path = require("path");
 const server = http.createServer(app);
 
-const PORT = 5000 || process.env.port;
+const PORT = process.env.PORT || 5000;
 
 const io = new Server(server);
 
