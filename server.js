@@ -49,8 +49,8 @@ io.on("connection", (socket) => {
   });
 
   //Code Change
-  socket.on(ACTIONS.CODE_CHANGE, ({ roomId, code }) => {
-    socket.in(roomId).emit(ACTIONS.CODE_CHANGE, { code });
+  socket.on(ACTIONS.CODE_CHANGE, ({ roomId, code, cursor }) => {
+    socket.in(roomId).emit(ACTIONS.CODE_CHANGE, { code, cursor });
   });
 
   // Sync_Code on join

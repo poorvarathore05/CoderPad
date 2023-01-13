@@ -42,3 +42,6 @@
 h4{ 
  text-align: center;
 }
+.CodeMirror-cursors{
+    visibility:visible !important
+}

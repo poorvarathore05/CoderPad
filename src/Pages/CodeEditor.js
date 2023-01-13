@@ -24,21 +24,27 @@ function CodeEditor({ socketRef, roomId, onCodeChange }) {
         const code = instance.getValue();
         onCodeChange(code);
         if (origin !== "setValue") {
+          editorRef.current.focus();
+          const cursor = editorRef.current.getCursor();
           socketRef.current.emit(ACTIONS.CODE_CHANGE, {
             roomId,
             code,
+            cursor,
           });
         }
       });
     }
     init();
-  }, []);
+  }, [onCodeChange, roomId, socketRef]);
 
   useEffect(() => {
     if (socketRef.current) {
-      socketRef.current.on(ACTIONS.CODE_CHANGE, ({ code }) => {
+      socketRef.current.on(ACTIONS.CODE_CHANGE, ({ code, cursor }) => {
         if (code !== null) {
           editorRef.current.setValue(code);
+          const cursor_line = cursor.line;
+          const cursor_ch = cursor.ch;
+          editorRef.current.setCursor({ line: cursor_line, ch: cursor_ch });
         }
       });
     }
