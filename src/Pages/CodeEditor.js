@@ -3,7 +3,7 @@ import "./Editor.css";
 import CodeMirror from "codemirror";
 import "codemirror/lib/codemirror.css";
 import "codemirror/theme/dracula.css";
-import "codemirror/mode/javascript/javascript";
+import "codemirror/mode/javascript/javascript.js";
 import ACTIONS from "../ACTIONS";
 
 function CodeEditor({ socketRef, roomId, onCodeChange }) {
@@ -35,7 +35,7 @@ function CodeEditor({ socketRef, roomId, onCodeChange }) {
       });
     }
     init();
-  }, [onCodeChange, roomId, socketRef]);
+  }, []);
 
   useEffect(() => {
     if (socketRef.current) {
