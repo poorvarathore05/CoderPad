@@ -171,7 +171,6 @@ function EditorPage() {
           <option value="text/x-java" name="text/x-java">
             Java
           </option>
-
           <option value="python" name="python">
             Python
           </option>
