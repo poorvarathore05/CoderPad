@@ -1,5 +1,4 @@
 {
-  "homepage": "http://poorvarathore05/github.io/CoderPad",
   "name": "coder_pad",
   "version": "0.1.0",
   "private": true,
@@ -27,9 +26,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "predeploy": "npm run build && npm run server:prod",
-    "deploy": "gh-pages -d build",
+    "start:front": "react-scripts start",
+    "start": "npm run build && npm run server:prod",
     "build": "react-scripts build",
     "server:dev": "nodemon server.js",
     "server:prod": "node server.js",
@@ -55,6 +53,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "@types/codemirror": "^5.60.6"
   }
 }
