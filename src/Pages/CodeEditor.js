@@ -3,18 +3,23 @@ import "./Editor.css";
 import CodeMirror from "codemirror";
 import "codemirror/lib/codemirror.css";
 import "codemirror/theme/dracula.css";
-import "codemirror/mode/javascript/javascript.js";
+import "codemirror/mode/javascript/javascript";
+import "codemirror/mode/clike/clike";
+import "codemirror/mode/python/python";
 import ACTIONS from "../ACTIONS";
 
-function CodeEditor({ socketRef, roomId, onCodeChange }) {
+function CodeEditor({ socketRef, roomId, onCodeChange, language }) {
   const editorRef = useRef(null);
+  const language_mode = language.lang;
+  console.log(language_mode);
+  //  console.log(typeof language_mode);
 
   useEffect(() => {
     async function init() {
       editorRef.current = CodeMirror.fromTextArea(
         document.getElementById("textEditor"),
         {
-          mode: { name: "javascript", json: true },
+          mode: { name: language_mode },
           theme: "dracula",
           lineNumbers: true,
         }

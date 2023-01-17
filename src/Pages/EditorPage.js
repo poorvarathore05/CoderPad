@@ -18,6 +18,8 @@ import { RxCross2 } from "react-icons/rx";
 
 function EditorPage() {
   const [clients, setClients] = useState([]);
+  const [language, setLanguage] = useState({ lang: "javascript" });
+
   let socketRef = useRef("");
   const codeRef = useRef(null);
   const location = useLocation();
@@ -114,14 +116,18 @@ function EditorPage() {
     <Navigate to="/" />;
   }
 
+  function handlelangChange(e) {
+    const { name, value } = e.target;
+    setLanguage((data) => ({
+      ...data,
+      [name]: value,
+    }));
+  }
+
   return (
     <div className="mainwrap">
       <div className="asidewrap">
         <div className="inner">
-          {/* <div className="logo">
-            {" "}
-            <img src={logo} alt="" />
-          </div> */}
           <h4>Connected</h4>
           <div className="clients-list">
             {clients.map((client) => (
@@ -143,13 +149,36 @@ function EditorPage() {
           Leave <RxCross2 />
         </Button>
       </div>
-
       <div className="editorWarp">
         <CodeEditor
           socketRef={socketRef}
           roomId={roomId}
           onCodeChange={onCodeChange}
+          language={language}
         />
+      </div>
+      <div>
+        <h5 className="select-lang">Language</h5>
+        <select
+          className="lang-options"
+          name="lang"
+          value={language.lang}
+          onChange={handlelangChange}
+        >
+          <option value="javascript" name="javascript">
+            JavaScript
+          </option>
+          <option value="text/x-java" name="text/x-java">
+            Java
+          </option>
+
+          <option value="python" name="python">
+            Python
+          </option>
+          <option value="text/x-csrc" name="text/x-csrc">
+            C
+          </option>
+        </select>
       </div>
     </div>
   );

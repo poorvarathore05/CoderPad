@@ -1,6 +1,6 @@
 .mainwrap{
     display: grid;
-    grid-template-columns: 50fr 230fr;
+    grid-template-columns: 50fr 230fr 30fr;
 }
 .asidewrap{
     color: rgb(211 245 150);
@@ -44,4 +44,17 @@ h4{
 }
 .CodeMirror-cursors{
     visibility:visible !important
+}
+.select-lang{
+    color:#e9fe93;
+    font-size: large !important;
+    text-align: center;
+    margin-top: 1.5rem;
+    display: flex;
+    margin-left: 2rem;
+}
+.lang-options{
+    text-align: center;
+    display: flex;
+    margin-left: 2rem;
 }

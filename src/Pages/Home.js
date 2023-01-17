@@ -50,6 +50,7 @@ function Home() {
                 type="text"
                 name="username"
                 placeholder="USERNAME"
+                maxLength={12}
                 onChange={(e) => setUserName(e.target.value)}
                 value={userName}
               ></Form.Control>
