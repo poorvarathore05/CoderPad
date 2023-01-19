@@ -9,7 +9,7 @@ https://realtime-code-editor-by-poorva.herokuapp.com/
 ## Features:
 
 - User can choose coding language for syntax higihlighting.
-- Multiple users to join, view, edit and download the code.
+- Multiple users can join, view, edit and download the code.
 - Leave option with notifies other user.
 
 ## Technology Stack
