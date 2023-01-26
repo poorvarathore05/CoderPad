@@ -19,7 +19,8 @@ Users can create a new room via create a new room link. It will create a new uni
 
 - It will let the user to the editor page.
 - Users can copy the room id and share.
-  **For Participating User**
+
+**For Participating User**
 - Participating users can paste the room Id and enter a username and join the existing room
 - After joining the room user can see existing content, and people who joined and collaborate.
 
