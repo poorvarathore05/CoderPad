@@ -20,6 +20,7 @@
     "react-router-dom": "^6.4.5",
     "react-scripts": "^5.0.1",
     "react-uuid": "^2.0.0",
+    "serve": "^14.2.0",
     "socket.io": "^4.5.4",
     "socket.io-client": "^4.5.4",
     "uuid": "^9.0.0",
@@ -27,7 +28,7 @@
   },
   "scripts": {
     "start:front": "react-scripts start",
-    "start": "npm run build && npm run server:prod",
+    "start": "serve -s build && npm run server:prod",
     "build": "react-scripts build",
     "server:dev": "nodemon server.js",
     "server:prod": "node server.js",
