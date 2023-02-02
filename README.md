@@ -1,6 +1,6 @@
 ## CoderPad
 
-Coderpad is an online real-time collaborative code editor it will allows the interviewer and interviewee do live coding.It is a web-based application that allows multiple users to join,view, edit and download code.
+Coderpad is an online real-time collaborative code editor it will allow the interviewer and interviewee to do live coding.It is a web-based application that allows multiple users to join, view, edit and download code.
 
 ## Live Demo:
 
